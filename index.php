@@ -83,7 +83,7 @@
 	  $text='<h3>To compare string<h3><br>';
 	  $tesxt2='Hi';
 	  stringFunctions::printThis($text);
-	  $len=str_cmp($text1,$text2);
+	  $len=strcmp($text1,$text2);
 	  stringFunctions::printThis($len);
 	  stringFunctions::printThisline();
 
