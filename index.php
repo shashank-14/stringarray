@@ -33,7 +33,7 @@
      }
 
      static public function otherfunctions(){
-        $text1 = "Sample string to work<br>";
+        $text1 = "Sample string to work";
 	$text='<h1>To print length of string<h1><br>';
 	stringFunctions::printThis($text);
 	$len=strlen($text1);
@@ -50,10 +50,20 @@
 
 	  $text='<h1>To reverse  string<h1><br>';
 	  stringFunctions::printThis($text);
-	  $len=strev($text1);
+	  $len=strrev($text1);
 	  stringFunctions::printThis($len);
 	  $text = "<hr><br>";
 	  stringFunctions::printThis($text);
+
+	  $text='<h1>To convert string to uppercase<h1><br>';
+	   stringFunctions::printThis($text);
+	  $len=strtoupper($text1);
+	  stringFunctions::printThis($len);
+	  $text = "<hr><br>";
+	  stringFunctions::printThis($text);
+
+
+
 
 
 
