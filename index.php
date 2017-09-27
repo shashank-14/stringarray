@@ -93,7 +93,7 @@
 
 	   $text='<h3>To explode string<h3><br>';
 	   stringFunctions::printThis($text);
-	   print_r(explode(" ",$text);
+	   print_r(explode(" ",$text));
 	  stringFunctions::printThisline();
 
 
