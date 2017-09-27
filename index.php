@@ -71,6 +71,7 @@
 	  stringFunctions::printThis($text);
 	  $len=strtolower($text1);
 	  stringFunctions::printThis($len);
+	  stringFunctions::printThisline();
 
    	  $text='<h3>To repeat string function<h3><br>';
 	  stringFunctions::printThis($text);
@@ -96,14 +97,11 @@
 	   print_r(explode(" ",$text1));
 	  stringFunctions::printThisline();
 
-
-
-
-
-
-
-
-
+	   $text='<h3>To pad string<h3><br>';
+	   stringFunctions::printThis($text);
+	   $len=str_pad($text1,25,"-",str_pad_left);
+	   stringFunctions::printThis($len);
+	   stringFunctions::printThisline();
 
      }
   }
