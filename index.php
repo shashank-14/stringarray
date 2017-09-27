@@ -33,6 +33,7 @@
      }
 
      static public function otherfunctions(){
+        $text1 = "Sample string to work<br>";
 	$text='<h1>To print length of string<h1><br>';
 	stringFunctions::printThis($text);
 	$len=strlen($text1);
@@ -46,6 +47,15 @@
 	 stringFunctions::printThis($len);
 	 $text = "<hr><br>";
          stringFunctions::printThis($text);
+
+	  $text='<h1>To reverse  string<h1><br>';
+	  stringFunctions::printThis($text);
+	  $len=strev($text1);
+	  stringFunctions::printThis($len);
+	  $text = "<hr><br>";
+	  stringFunctions::printThis($text);
+
+
 
 
 
