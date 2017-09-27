@@ -13,6 +13,7 @@
        stringFunctions::printThis($text);
        $text = "<hr><br>";
        stringFunctions::printThis($text);
+       stringFunctions::otherfunctions();
        $text = "<h1>Array Function Demonstration-ARRAY</h1><br>";
        stringFunctions::printThis($text);
        $myArray = array(1,2,3,4,5);
@@ -29,6 +30,18 @@
   class stringFunctions {
      static public function printThis($text) {
         print($text);
+     }
+
+     static public function otherfunctions(){
+     	$text1='Sample string to work';
+	$text='To print length of string';
+	stringFunctions::printThis($text);
+	$len=strlen($text1);
+	stringFunctions::printThis($len);
+	$text = "<hr><br>";
+	stringFunctions::printThis($text);
+
+
      }
   }
 
