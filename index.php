@@ -71,8 +71,6 @@
 	  stringFunctions::printThis($text);
 	  $len=strtolower($text1);
 	  stringFunctions::printThis($len);
-	  stringFunctions::printThisline();
-
 
    	  $text='<h3>To repeat string function<h3><br>';
 	  stringFunctions::printThis($text);
@@ -91,6 +89,11 @@
 	  stringFunctions::printThis($text);
 	  $len=str_replace("Sample","example",$text1);
 	  stringFunctions::printThis($len);
+	  stringFunctions::printThisline();
+
+	   $text='<h3>To explode string<h3><br>';
+	   stringFunctions::printThis($text);
+	   print_r(explode(" ",$text);
 	  stringFunctions::printThisline();
 
 
