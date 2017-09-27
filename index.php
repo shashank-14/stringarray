@@ -9,8 +9,8 @@
        echo "$text";
        $text = "<h1>String Function Demonstration</h1><br>";
        stringFunctions::printThis($text);
-       $text = "Sample Text<br>";
-       stringFunctions::printThis($text);
+       $text1 = "Sample string to work<br>";
+       stringFunctions::printThis($text1);
        $text = "<hr><br>";
        stringFunctions::printThis($text);
        stringFunctions::otherfunctions();
@@ -33,13 +33,23 @@
      }
 
      static public function otherfunctions(){
-     	$text1='Sample string to work';
-	$text='To print length of string';
+	$text='<h1>To print length of string<h1><br>';
 	stringFunctions::printThis($text);
 	$len=strlen($text1);
 	stringFunctions::printThis($len);
 	$text = "<hr><br>";
 	stringFunctions::printThis($text);
+
+	 $text='<h1>To print number of words in string<h1><br>';
+	 stringFunctions::printThis($text);
+	 $len=str_word_count($text1);
+	 stringFunctions::printThis($len);
+	 $text = "<hr><br>";
+         stringFunctions::printThis($text);
+
+
+
+
 
 
      }
