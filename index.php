@@ -99,7 +99,7 @@
 
 	   $text='<h3>To pad string<h3><br>';
 	   stringFunctions::printThis($text);
-	   $len=str_pad($text1,25,"-",str_pad_left);
+	   $len=str_pad($text1,25,"_");
 	   stringFunctions::printThis($len);
 	   stringFunctions::printThisline();
 
