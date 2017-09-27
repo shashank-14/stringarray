@@ -87,6 +87,12 @@
 	  stringFunctions::printThis($len);
 	  stringFunctions::printThisline();
 
+	  $text='<h3>To replace string<h3><br>';
+	  stringFunctions::printThis($text);
+	  $len=str_replace("Sample","example",$text1);
+	  stringFunctions::printThis($len);
+	  stringFunctions::printThisline();
+
 
 
 
