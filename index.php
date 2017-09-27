@@ -12,13 +12,12 @@
        stringFunctions::printThis($text);
        $text1 = "Sample string to work<br>";
        stringFunctions::printThis($text1);
-       stringFunctions::printThis($text);
        stringFunctions::otherfunctions();
-       $text = "<h1>Array Function Demonstration-ARRAY</h1><br>";
-       stringFunctions::printThis($text);
-       $myArray = array(1,2,3,4,5);
-       arrayFunctions::printArray($myArray);
-       stringFunctions::printThis($text);
+      // $text = "<h1>Array Function Demonstration-ARRAY</h1><br>";
+      // stringFunctions::printThis($text);
+      // $myArray = array(1,2,3,4,5);
+      // arrayFunctions::printArray($myArray);
+       //stringFunctions::printThis($text);
     }
 
     public function __destruct() {
@@ -36,7 +35,7 @@
 	       print($text);
 	 }
 	
-     }
+     
 
      static public function otherfunctions(){
         $text1 = "Sample string to work";
@@ -44,42 +43,42 @@
 	stringFunctions::printThis($text);
 	$len=strlen($text1);
 	stringFunctions::printThis($len);
-	stringFunctions::printThisline($len);
+	stringFunctions::printThisline();
 	
 
 	 $text='<h1>To print number of words in string<h1><br>';
 	 stringFunctions::printThis($text);
 	 $len=str_word_count($text1);
 	 stringFunctions::printThis($len);
-	 stringFunctions::printThisline($len);
+	 stringFunctions::printThisline();
 
 
 	  $text='<h1>To reverse  string<h1><br>';
 	  stringFunctions::printThis($text);
 	  $len=strrev($text1);
 	  stringFunctions::printThis($len);
-	  stringFunctions::printThisline($len);
+	  stringFunctions::printThisline();
 
 
 	  $text='<h1>To convert string to uppercase<h1><br>';
 	   stringFunctions::printThis($text);
 	  $len=strtoupper($text1);
 	  stringFunctions::printThis($len);
-	  stringFunctions::printThisline($len);
+	  stringFunctions::printThisline();
 
 
 	  $text='<h1>To convert string to lowercase<h1><br>';
 	  stringFunctions::printThis($text);
 	  $len=strtolower($text1);
 	  stringFunctions::printThis($len);
-	  stringFunctions::printThisline($len);
+	  stringFunctions::printThisline();
 
 
    	  $text='<h1>To repeat string function<h1><br>';
 	  stringFunctions::printThis($text);
 	  $len=str_repeat($text1);
 	  stringFunctions::printThis($len);
-	  stringFunctions::printThisline($len);
+	  stringFunctions::printThisline();
 
 
 
@@ -92,6 +91,7 @@
 
      }
   }
+  
 
   class arrayFunctions {
      static public function printArray($myArray) {
