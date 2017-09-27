@@ -11,14 +11,12 @@
        stringFunctions::printThis($text);
        $text1 = "Sample string to work<br>";
        stringFunctions::printThis($text1);
-       $text = "<hr><br>";
        stringFunctions::printThis($text);
        stringFunctions::otherfunctions();
        $text = "<h1>Array Function Demonstration-ARRAY</h1><br>";
        stringFunctions::printThis($text);
        $myArray = array(1,2,3,4,5);
        arrayFunctions::printArray($myArray);
-       $text = "<hr><br>";
        stringFunctions::printThis($text);
     }
 
@@ -30,7 +28,7 @@
   class stringFunctions {
      static public function printThis($text) {
         print($text);
-	$text="<hr><br>";
+	$text = "<hr><br>";
 	print($text);
      }
 
@@ -40,7 +38,6 @@
 	stringFunctions::printThis($text);
 	$len=strlen($text1);
 	stringFunctions::printThis($len);
-
 
 	 $text='<h1>To print number of words in string<h1><br>';
 	 stringFunctions::printThis($text);
