@@ -30,6 +30,8 @@
   class stringFunctions {
      static public function printThis($text) {
         print($text);
+	$text="<hr><br>";
+	print($text);
      }
 
      static public function otherfunctions(){
@@ -38,29 +40,27 @@
 	stringFunctions::printThis($text);
 	$len=strlen($text1);
 	stringFunctions::printThis($len);
-	$text = "<hr><br>";
-	stringFunctions::printThis($text);
+
 
 	 $text='<h1>To print number of words in string<h1><br>';
 	 stringFunctions::printThis($text);
 	 $len=str_word_count($text1);
 	 stringFunctions::printThis($len);
-	 $text = "<hr><br>";
-         stringFunctions::printThis($text);
 
 	  $text='<h1>To reverse  string<h1><br>';
 	  stringFunctions::printThis($text);
 	  $len=strrev($text1);
 	  stringFunctions::printThis($len);
-	  $text = "<hr><br>";
-	  stringFunctions::printThis($text);
 
 	  $text='<h1>To convert string to uppercase<h1><br>';
 	   stringFunctions::printThis($text);
 	  $len=strtoupper($text1);
 	  stringFunctions::printThis($len);
-	  $text = "<hr><br>";
+
+	  $text='<h1>To convert string to lowercase<h1><br>';
 	  stringFunctions::printThis($text);
+	  $len=strtolower($text1);
+	  stringFunctions::printThis($len);
 
 
 
