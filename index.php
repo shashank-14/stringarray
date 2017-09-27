@@ -65,7 +65,7 @@
 	  $len=strtolower($text1);
 	  stringFunctions::printThis($len);
 
-    $text='<h1>To repeat string<h1><br>';
+   	  $text='<h1>To repeat string function<h1><br>';
 	  stringFunctions::printThis($text);
 	  $len=str_repeat($text1);
 	  stringFunctions::printThis($len);
