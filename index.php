@@ -5,13 +5,13 @@
   class main {
 
     public function __construct() {
-        $i=0;
+      //  $i=0;
        $text = "program  started<br>";
        echo "$text";
-       $text = "<h1>String Function Demonstration</h1><br>";
-       stringFunctions::printThis($text);
-       $text1 = "Sample string to work<br>";
-       stringFunctions::printThis($text1);
+      // $text = "<h1>String Function Demonstration</h1><br>";
+      // stringFunctions::printThis($text);
+      // $text1 = "Sample string to work<br>";
+      // stringFunctions::printThis($text1);
        stringFunctions::otherfunctions();
       // $text = "<h1>Array Function Demonstration-ARRAY</h1><br>";
       // stringFunctions::printThis($text);
@@ -39,44 +39,44 @@
 
      static public function otherfunctions(){
         $text1 = "Sample string to work";
-	$text='<h1>To print length of string<h1><br>';
+	$text='<h3>To print length of string<h3><br>';
 	stringFunctions::printThis($text);
 	$len=strlen($text1);
 	stringFunctions::printThis($len);
 	stringFunctions::printThisline();
 	
 
-	 $text='<h1>To print number of words in string<h1><br>';
+	 $text='<h3>To print number of words in string<h3><br>';
 	 stringFunctions::printThis($text);
 	 $len=str_word_count($text1);
 	 stringFunctions::printThis($len);
 	 stringFunctions::printThisline();
 
 
-	  $text='<h1>To reverse  string<h1><br>';
+	  $text='<h3>To reverse  string<h3><br>';
 	  stringFunctions::printThis($text);
 	  $len=strrev($text1);
 	  stringFunctions::printThis($len);
 	  stringFunctions::printThisline();
 
 
-	  $text='<h1>To convert string to uppercase<h1><br>';
+	  $text='<h3>To convert string to uppercase<h3><br>';
 	   stringFunctions::printThis($text);
 	  $len=strtoupper($text1);
 	  stringFunctions::printThis($len);
 	  stringFunctions::printThisline();
 
 
-	  $text='<h1>To convert string to lowercase<h1><br>';
+	  $text='<h3>To convert string to lowercase<h3><br>';
 	  stringFunctions::printThis($text);
 	  $len=strtolower($text1);
 	  stringFunctions::printThis($len);
 	  stringFunctions::printThisline();
 
 
-   	  $text='<h1>To repeat string function<h1><br>';
+   	  $text='<h3>To repeat string function<h3><br>';
 	  stringFunctions::printThis($text);
-	  $len=str_repeat($text1);
+	  $len=str_repeat($text1,3);
 	  stringFunctions::printThis($len);
 	  stringFunctions::printThisline();
 
