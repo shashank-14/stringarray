@@ -5,6 +5,7 @@
   class main {
 
     public function __construct() {
+        $i=0;
        $text = "program  started<br>";
        echo "$text";
        $text = "<h1>String Function Demonstration</h1><br>";
@@ -28,8 +29,13 @@
   class stringFunctions {
      static public function printThis($text) {
         print($text);
-	$text = "<hr><br>";
-	print($text);
+        
+        if(i%2==0){
+        {
+          $text = "<hr><br>";
+	        print($text);
+        }
+	
      }
 
      static public function otherfunctions(){
@@ -59,7 +65,10 @@
 	  $len=strtolower($text1);
 	  stringFunctions::printThis($len);
 
-
+    $text='<h1>To repeat string<h1><br>';
+	  stringFunctions::printThis($text);
+	  $len=str_repeat($text1);
+	  stringFunctions::printThis($len);
 
 
 
