@@ -148,6 +148,22 @@
 		 arrayFunctions::printArray($len);
 	         arrayFunctions::printThisline();
 
+		 $myArray=array(3,2,1,5,4);
+		 $text='<h3>To flip array<h3><br>';
+		 stringFunctions::printThis($text);
+		 $len=array_flip($myArray);
+                 arrayFunctions::printArray($len);
+	         arrayFunctions::printThisline();
+
+		  $myArray=array(3,2,1,5,4);
+		 $text='<h3>To check value exists in array<h3><br>';
+ 	         stringFunctions::printThis($text);
+                 $len=in_array(1,$myArray);
+                 stringFunctions::printThis($len);
+                 arrayFunctions::printThisline();
+
+
+
 
 
 
