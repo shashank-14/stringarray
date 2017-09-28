@@ -7,8 +7,8 @@
     public function __construct() {
        $text = "program  started<br>";
        echo "$text";
-      // $text = "<h1>String Function Demonstration</h1><br>";
-     // $stringFunctions::printThis($text);
+      $text = "<h1>String Function Demonstration</h1><br>";
+     $stringFunctions::printThis($text);
      // $text1 = "Sample string to work<br>";
      // stringFunctions::printThis($text1);
        stringFunctions::otherfunctions();
