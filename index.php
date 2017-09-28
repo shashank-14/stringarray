@@ -118,6 +118,14 @@
 	 }
 	
 	static public function otherfunctions(){
+
+	$myArray=array(3,2,1,5,4);
+		 $text='<h3>To count elements in array<h3><br>';
+		  stringFunctions::printThis($text);
+		$len=count($myArray);
+                arrayFunctions::printArray($len);
+                arrayFunctions::printThisline();
+
 		$text='<h3>To sort array<h3><br>';
 		 stringFunctions::printThis($text);
 		$len=sort($myArray);
