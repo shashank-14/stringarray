@@ -128,9 +128,10 @@
 
 		$text='<h3>To sort array<h3><br>';
 		 stringFunctions::printThis($text);
-		$len=sort($myArray);
-		arrayFunctions::printArray($len);
-		arrayFunctions::printThisline();
+		//$len=sort($myArray);
+		//arrayFunctions::printArray($len);
+		//arrayFunctions::printThisline();
+		print_r(sort($myArray));
 
 		 $text='<h3>To reverse sort array<h3><br>';
 		  stringFunctions::printThis($text);
