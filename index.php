@@ -126,16 +126,16 @@
                 arrayFunctions::printArray($len);
                 arrayFunctions::printThisline();
 
-		$text='<h3>To sort array<h3><br>';
+		$text='<h3>To calculate sum of array<h3><br>';
 		 stringFunctions::printThis($text);
-		//$len=sort($myArray);
-		//arrayFunctions::printArray($len);
-		//arrayFunctions::printThisline();
+		$len=array_sum($myArray);
+		arrayFunctions::printArray($len);
+		arrayFunctions::printThisline();
 		print_r(sort($myArray));
 
-		 $text='<h3>To reverse sort array<h3><br>';
+		 $text='<h3>To reverse array<h3><br>';
 		  stringFunctions::printThis($text);
-		$len=rsort($myArray);
+		$len=array_reverse($myArray);
 		arrayFunctions::printArray($len);
 		arrayFunctions::printThisline();
 
