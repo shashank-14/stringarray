@@ -158,9 +158,26 @@
 		  $myArray=array(3,2,1,5,4);
 		 $text='<h3>To check value exists in array<h3><br>';
  	         stringFunctions::printThis($text);
-                 $len=in_array(1,$myArray);
+                 $len=in_array(9,$myArray);
                  stringFunctions::printThis($len);
                  arrayFunctions::printThisline();
+
+		  $myArray=array(3,2,1,5,4);
+		  $text='<h3>To slice array<h3><br>';
+	          stringFunctions::printThis($text);
+	          $len=array_slice($myArray,2);
+	          arrayFunctions::printArray($len);
+	          arrayFunctions::printThisline();
+
+		  $myArray=array(3,2,1,5,4);
+	          $text='<h3>To shift  array<h3><br>';
+		  stringFunctions::printThis($text);
+	          $len=array_shift($myArray);
+	          arrayFunctions::printArray($len);
+                  arrayFunctions::printThisline();
+
+
+
 
 
 
