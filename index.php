@@ -8,15 +8,16 @@
       //  $i=0;
        $text = "program  started<br>";
        echo "$text";
-      // $text = "<h1>String Function Demonstration</h1><br>";
-      // stringFunctions::printThis($text);
-      // $text1 = "Sample string to work<br>";
-      // stringFunctions::printThis($text1);
+       $text = "<h1>String Function Demonstration</h1><br>";
+      $stringFunctions::printThis($text);
+      $text1 = "Sample string to work<br>";
+      stringFunctions::printThis($text1);
        stringFunctions::otherfunctions();
-      // $text = "<h1>Array Function Demonstration-ARRAY</h1><br>";
-      // stringFunctions::printThis($text);
-      // $myArray = array(1,2,3,4,5);
-      // arrayFunctions::printArray($myArray);
+      $text = "<h1>Array Function Demonstration</h1><br>";
+      stringFunctions::printThis($text);
+      $myArray = array(3,2,1,5,4);
+      arrayFunctions::printArray($myArray);
+      arrayFunctions::otherfunctions();
        //stringFunctions::printThis($text);
     }
 
@@ -111,6 +112,36 @@
      static public function printArray($myArray) {
        print_r ($myArray);
      }
+
+     static public function printThisline() {
+        $text='<hr><br>';
+	print($text);
+	 }
+	
+	static public function otherfunctions(){
+		$text='<h3>To sort array<h3><br>';
+		 stringFunctions::printThis($text);
+		$len=sort($myArray);
+		arrayFunctions::printArray($len);
+		arrayFunctions::printThisline();
+
+		 $text='<h3>To reverse sort array<h3><br>';
+		  stringFunctions::printThis($text);
+		$len=rsort($myArray);
+		arrayFunctions::printArray($len);
+		arrayFunctions::printThisline();
+
+
+
+
+
+
+
+
+	}
+
+
+
   }
 
 ?>
