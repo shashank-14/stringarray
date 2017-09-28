@@ -169,17 +169,17 @@
 	          arrayFunctions::printThisline();
 
 		  $myArray=array(3,2,1,5,4);
-	          $text='<h3>To shift  array<h3><br>';
+	          $text='<h3>To push array<h3><br>';
 		  stringFunctions::printThis($text);
-	         // $len=array_shift($myArray);
-		 print_r(array_shift($myArray));
-	         // arrayFunctions::printArray($len);
+	         $len=array_push($myArray,9,8);
+	         arrayFunctions::printArray($len);
                   arrayFunctions::printThisline();
 
 		  $myArray=array(3,2,1,5,4);
 		 $text='<h3>To search in array<h3><br>';
 	         stringFunctions::printThis($text);
-	         $len=array_search(4,$myArray);
+	        echo '<h3>Searching for element 2:<h3>';
+		$len=array_search(2,$myArray);
 		stringFunctions::printThis($len);
                  arrayFunctions::printThisline();
 
