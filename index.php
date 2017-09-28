@@ -131,7 +131,6 @@
 		$len=array_sum($myArray);
 		arrayFunctions::printArray($len);
 		arrayFunctions::printThisline();
-		print_r(sort($myArray));
 
 		$myArray=array(3,2,1,5,4);
 		$text='<h3>To reverse array<h3><br>';
@@ -158,7 +157,7 @@
 		  $myArray=array(3,2,1,5,4);
 		 $text='<h3>To check value exists in array<h3><br>';
  	         stringFunctions::printThis($text);
-                 $len=in_array(9,$myArray);
+                 $len=in_array(4,$myArray);
                  stringFunctions::printThis($len);
                  arrayFunctions::printThisline();
 
@@ -172,9 +171,28 @@
 		  $myArray=array(3,2,1,5,4);
 	          $text='<h3>To shift  array<h3><br>';
 		  stringFunctions::printThis($text);
-	          $len=array_shift($myArray);
-	          arrayFunctions::printArray($len);
+	         // $len=array_shift($myArray);
+		 print_r(array_shift($myArray));
+	         // arrayFunctions::printArray($len);
                   arrayFunctions::printThisline();
+
+		  $myArray=array(3,2,1,5,4);
+		 $text='<h3>To search in array<h3><br>';
+	         stringFunctions::printThis($text);
+	         $len=array_search(4,$myArray);
+		stringFunctions::printThis($len);
+                 arrayFunctions::printThisline();
+
+		 $myArray=array(3,2,1,5,4);
+		 $myArray1=array(6);
+		 $text='<h3>To replace in  array<h3><br>';
+		 stringFunctions::printThis($text);
+		 $len=array_replace($myArray,$myArray1);
+		 arrayFunctions::printArray($len);
+		 arrayFunctions::printThisline();
+
+
+
 
 
 
