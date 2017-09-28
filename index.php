@@ -5,7 +5,6 @@
   class main {
 
     public function __construct() {
-      //  $i=0;
        $text = "program  started<br>";
        echo "$text";
        $text = "<h1>String Function Demonstration</h1><br>";
