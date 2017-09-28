@@ -179,7 +179,7 @@
 		  $myArray=array(3,2,1,5,4);
 		 $text='<h3>To search in array<h3><br>';
 	         stringFunctions::printThis($text);
-	        echo '<h3>Searching for element 2:<h3>';
+	        echo '<h3>Searching for element 2(returns key):<h3>';
 		$len=array_search(2,$myArray);
 		stringFunctions::printThis($len);
                  arrayFunctions::printThisline();
