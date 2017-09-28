@@ -133,11 +133,21 @@
 		arrayFunctions::printThisline();
 		print_r(sort($myArray));
 
-		 $text='<h3>To reverse array<h3><br>';
+		$myArray=array(3,2,1,5,4);
+		$text='<h3>To reverse array<h3><br>';
 		  stringFunctions::printThis($text);
 		$len=array_reverse($myArray);
 		arrayFunctions::printArray($len);
 		arrayFunctions::printThisline();
+
+		 $myArray=array(3,2,1,5,4);
+		 $myArray1=array(6,7,8,9,0);
+	         $text='<h3>To merge  array<h3><br>';
+                 stringFunctions::printThis($text);
+		 $len=array_merge($myArray,$myArray1);
+		 arrayFunctions::printArray($len);
+	         arrayFunctions::printThisline();
+
 
 
 
